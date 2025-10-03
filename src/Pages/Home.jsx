@@ -1,9 +1,10 @@
-function Home() {
-  return (
-    <div className="flex text-white min-h-screen flex-col items-center justify-center bg-gray-800">
-      <h1 className="text-3xl font-bold underline">Home</h1>
-    </div>
-  )
-}
+import AdminLayout from "../Template/AdminLayout";
 
-export default Home
+export default function AdminPage() {
+  return (
+    <AdminLayout>
+      <h2 className="text-2xl font-bold">Selamat Datang di Halaman Admin</h2>
+      <p className="mt-2">Ini adalah dashboard admin.</p>
+    </AdminLayout>
+  );
+}
